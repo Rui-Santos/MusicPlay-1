@@ -41,18 +41,18 @@ get_header(); ?>
 			}else{
 				$audio_limit	= '-1' ;
 			}
-            if($orderby == 'audio_release_date'){
-                $meta_key = 'audio_release_date';
-            }else{
-                $meta_key = "";
-            }
+        		if($orderby == 'audio_release_date'){
+				$meta_key = 'audio_release_date';
+			}else{
+				$meta_key = "";
+			}
 			$args = array(
 					'post_type' 	 => 'albums',
 					'posts_per_page' => $audio_limit, 
-					'paged' 		 => $paged,
-					'orderby'		 =>	$orderby,
-                    'meta_key'       => $meta_key,
-					'order'			 =>	$order
+					'paged' 	 => $paged,
+					'orderby'	 =>	$orderby,
+					'meta_key'       => $meta_key,
+					'order'		 =>	$order
 				);
 		
 			
